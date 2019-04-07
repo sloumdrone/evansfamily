@@ -1,0 +1,25 @@
+{
+    "browserSyncOptions": {
+        "proxy": "localhost/",
+        "port": 80,
+        "notify": false
+    },
+    "browserSyncWatchFiles": [
+        "./css/*.min.css",
+        "./js/*.min.js",
+        "./**/*.php"
+    ],
+    "paths": {
+        "js": "./assets/js",
+        "css": "./assets/css",
+        "img": "./assets/img",
+        "imgsrc": "./assets/src/img",
+        "sass": "./assets/sass",
+        "node": "./node_modules/",
+        "bower": "./bower_components/",
+        "dev": "./assets/src",
+        "dist": "./dist",
+        "distprod": "./dist-product",
+        "vendor": ""
+    }
+}

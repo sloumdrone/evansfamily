@@ -1,0 +1,10 @@
+{
+    "name": "FormulaFolios",
+    "description": "FormulaFolios base wordpress theme",
+    "type": "library",
+    "license": "",
+    "minimum-stability": "stable",
+    "require": {},
+    "keywords": ["wordpress","theme","bootstrap"],
+    "homepage": "https://github.com/formulafolios"
+}
