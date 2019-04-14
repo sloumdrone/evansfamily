@@ -1,0 +1,125 @@
+header.mainheader {
+    background-color:  $evans-white;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: $zindex-fixed;
+
+    nav {
+        padding-top: 0.5rem;
+
+        ul.menu {
+            list-style: none;
+            border-top: 1px solid $evans-black;
+            border-bottom: 1px solid $evans-black;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+
+            @include mobile {
+                &:not(.expanded) {
+                    li:not(.title) {
+                        display: none;
+                    }
+                }
+
+                &.expanded {
+                    li:not(.title) {
+                        display: list-item;
+                    }
+
+                    button.arrow::after {
+                        transform: translateY(-20%) rotateZ(-135deg);
+                    }
+                }
+            }
+
+            li {
+                padding-left: 0;
+                line-height: 1.5rem;
+
+                @include mobile {
+                    padding-left: 15px;
+                }
+
+                &.title {
+                    font-size: 1.25rem;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                    padding-left: 15px;
+                    line-height: 1.25rem;
+
+                    @include mobile {
+                        padding-right: 15px;
+                    }
+                }
+
+                a {
+                    display: inline-block;
+                    letter-spacing: 1px;
+                    transition: 600ms;
+
+                    &:hover, &:focus {
+                        letter-spacing: 2px;
+                        color: $evans-sage;
+                    }
+
+                }
+
+                button.arrow {
+                    position: absolute;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    right: 15px;
+                    top: 0;
+                    border: none;
+                    background-color: $evans-white;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 50%;
+                        height: 50%;
+                        border-bottom: 1px solid $evans-black;
+                        border-right: 1px solid $evans-black;
+                        transform: translateY(-75%) rotateZ(45deg);
+                        transform-origin: center center;
+                        transition: 300ms;
+                        top: 50%;
+                        right: 0;
+                    }
+                }
+
+            }
+
+            form {
+                label {
+                    display: none;
+                }
+
+                input.field {
+                    border-radius: 0;
+                    background-color: $evans-white;
+                    color: $evans-black;
+                    border: none;
+                    border-bottom: 1px solid $evans-black;
+                }
+
+                input.submit {
+                    background-color: $evans-sage;
+                    border-radius: 0;
+                    border-color: transparent;
+                    border-bottom-color: $evans-black;
+                    line-height: 1.25ren;
+                    color: $evans-blue;
+                }
+            }
+        }
+    }
+}

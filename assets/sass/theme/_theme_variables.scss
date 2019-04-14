@@ -2,5 +2,71 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
-$primary: #82BC00; // Thats a sample how you could change a BootStrap variable.
-$font-family-sans-serif: Arial, Helvetica, sans-serif; //set to ff standard font by default
+@font-face {
+    font-family: 'Josefin';
+    src: url('../fonts/JosefinSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('../fonts/JosefinSans-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('../fonts/JosefinSans-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url('../fonts/JosefinSans-BoldItalic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/Playfair-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/Playfair-Italic.otf') format('otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/Playfair-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/Playfair-BoldItalic.otf') format('otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+$evans-black: #1A1A23;
+$evans-white: #FCF9F9;
+$evans-pink: #E8C1C5;
+$evans-gray: #4D4847;
+$evans-sage: #7FA39D;
+$evans-blue: #3E6990;
+
+@mixin mobile {
+    @media (max-width: 767px){
+        @content;
+    }
+}

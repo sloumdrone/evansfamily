@@ -11,3 +11,26 @@
  * in your template or in /inc/enqueue.php
  */
 
+var header = (function($){
+    var toggleMobileMenu = function() {
+        $('ul.menu').toggleClass('expanded');
+    };
+
+    var clickHandlers = function() {
+        $('button.arrow').on('click', toggleMobileMenu);
+    };
+
+    var init = function() {
+        clickHandlers();
+    };
+
+    return {
+        init: init
+    };
+
+})(jQuery);
+
+
+jQuery(document).ready(function(){
+    header.init();
+});

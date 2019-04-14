@@ -1,0 +1,46 @@
+ul.subnav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-top: 6rem;
+
+    li {
+        position: relative;
+        border-bottom: 1px solid #4d484742;
+
+        a.downlink {
+            color: $evans-black;
+
+            &::after {
+                content: '';
+                width: 0.6rem;
+                height: 0.6rem;
+                border-bottom: 1px solid #4d484742;
+                border-right: 1px solid #4d484742;
+                transform: rotateZ(45deg);
+                transform-origin: center center;
+                position: absolute;
+                top: 25%;
+                right: 0.3rem;
+            }
+        }
+    }
+
+}
+
+.profile-pic-holder {
+    max-width: 150px;
+    width: 50%;
+    display: inline-block;
+
+    .profile-pic {
+        padding-top: 100%;
+        display: inline-block;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}

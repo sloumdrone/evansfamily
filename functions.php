@@ -18,7 +18,7 @@ require get_template_directory() . '/inc/enqueue.php';
 /**
  * Remove Comments. Comments are off by default.
  */
-require get_template_directory() . '/inc/remove-comments.php';
+// require get_template_directory() . '/inc/remove-comments.php';
 
 /**
  * Load Theme Utilities.

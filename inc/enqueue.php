@@ -16,7 +16,7 @@ if ( ! function_exists( 'ff_base_scripts' ) ) {
 		wp_enqueue_script( 'jquery');
 		wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/assets/js/popper.min.js', array(), true);
 		wp_enqueue_script( 'ff_base-scripts', get_template_directory_uri() . '/assets/js/theme.min.js', array(), $the_theme->get( 'Version' ), true );
-		wp_enqueue_script( 'ff_base-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array(), $the_theme->get( 'Version' ), true );
+		wp_enqueue_script( 'ff_base-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array(), true );
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
@@ -24,3 +24,14 @@ if ( ! function_exists( 'ff_base_scripts' ) ) {
 } // endif function_exists( 'ff_base_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'ff_base_scripts' );
+
+
+
+# Remove the admin bar for everyone but top level admins
+add_action('after_setup_theme', 'remove_admin_bar');
+ 
+function remove_admin_bar() {
+	if (!is_admin()) {
+		show_admin_bar(false);
+	}
+}

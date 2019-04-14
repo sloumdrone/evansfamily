@@ -1,5 +1,54 @@
-// This is a scss file for your custom styles - Please add your super duper awesome mega design styles here
+html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: "Times New Roman", Times, serif;
+}
 
-// body {
-//     background-color: red;
-// }
+body {
+    background-color: $evans-white;
+    font-size: 16px;
+    color: $evans-black;
+    padding-top: 90px !important;
+}
+
+a, a:hover, a:visited, a:active {
+    color: $evans-blue;
+    text-decoration: none;
+    transition: color 0.4s;
+
+    &.navlink {
+        color: $evans-black;
+    }
+
+    &:hover {
+        color: $evans-gray;
+    }
+}
+
+.darkbg {
+    a, a:hover, a:visited, a:active {
+        color: $evans-pink;
+    }
+}
+
+.darkbg {
+    background-color: $evans-black;
+}
+
+.shell {
+    width: 100vw;
+}
+
+.container.separator {
+    p {
+        font-size: 1.1rem;
+        color: $evans-black;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid $evans-black;
+        border-top: 1px solid $evans-black;
+    }
+}
+
+@import "_header";
+@import "_home";
