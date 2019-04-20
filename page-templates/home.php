@@ -35,7 +35,8 @@
             </div>
             <div class="col-12 col-md-6 offset-md-1 mt-4 mt-md-2">
                 <p class="text-center text-md-left">
-                    We set up this website so that friends and family, near and far, could keep up with us and stay in touch. Doing this here rather than Facebook or the like allows us to be in control of our own information and images.                 </p>
+                    We set up this website so that friends and family, near and far, could keep up with us and stay in touch. Doing this here rather than Facebook or the like allows us to be in control of our own information and images.
+                </p>
                 <p class="text-center text-md-left">
                     On this site you will find contact information, pictures, videos, and blog posts. Feel free to comment on the blog posts and send us any pictures that you think we, or others, would like to see (to the e-mail addresses listed in the contact section). We would greatly appreciate it if you did not post photos of us to social media.
                 </p>
@@ -47,13 +48,13 @@
 <section class="section-shell">
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-md-6">
 				        <?php while ( have_posts() ) : the_post(); ?>
 					          <?php the_content(); ?>
 				        <?php endwhile; ?>
             </div>
-            <div class="col-3 offset-1 text-center">
-                <img alt="" role="presentation" src="<?= ff_asset_url('bandafaces_tall.jpg'); ?>">
+            <div class="col-12 col-md-6 text-center">
+                <img alt="" role="presentation" src="<?= ff_asset_url('transparentinfinitywedding.png'); ?>">
             </div>
         </div>
         <div class="row">
