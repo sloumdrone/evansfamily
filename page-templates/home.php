@@ -48,15 +48,16 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-
+				        <?php while ( have_posts() ) : the_post(); ?>
+					          <?php the_content(); ?>
+				        <?php endwhile; ?>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-3 offset-1 text-center">
                 <img alt="" role="presentation" src="<?= ff_asset_url('bandafaces_tall.jpg'); ?>">
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-6">
-                
             </div>
             <div class="col-12 col-md-6 mt-5 mt-md-0">
 
