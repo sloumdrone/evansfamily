@@ -48,12 +48,13 @@
 <section class="section-shell">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12">
+                <img alt="" role="presentation" src="<?= ff_asset_url('transparentinfinitywedding.png'); ?>" class="float-right d-none d-md-inline-block" style="width: 55%; margin: 0 0 1rem 1rem;">
 				        <?php while ( have_posts() ) : the_post(); ?>
 					          <?php the_content(); ?>
 				        <?php endwhile; ?>
             </div>
-            <div class="col-12 col-md-6 text-center">
+            <div class="col-12 col-md-6 text-center d-md-none">
                 <img alt="" role="presentation" src="<?= ff_asset_url('transparentinfinitywedding.png'); ?>">
             </div>
         </div>
