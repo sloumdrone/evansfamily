@@ -38,7 +38,7 @@ $container   = get_theme_mod( 'ff_base_container_type' );
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php
-            if ( has_class('gallery') ) {
+            if ( has_category('gallery') ) {
                 continue;
             }
 
