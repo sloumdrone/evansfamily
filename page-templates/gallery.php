@@ -8,11 +8,6 @@
  */
 
 ff_get_header( 'header' );
-?>
-
-ff_get_header( 'header' );
-
-$container   = get_theme_mod( 'ff_base_container_type' );
 
 $query = new WP_Query( array(
 'posts_per_page' => -1,
