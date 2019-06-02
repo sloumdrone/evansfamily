@@ -35,7 +35,7 @@ $container = get_theme_mod( 'ff_base_container_type' );
                 <li class="col-md-2 col-12 text-md-left text-center order-2 order-md-1 mt-3 mt-md-0"><a href="<?= get_site_url(); ?>" class="navlink">HOME</a></li>
                 <li class="col-md-2 col-12 text-center order-3 order-md-2"><a href="<?= get_site_url( null, '/?page_id=12' ); ?>" class="navlink">BLOG</a></li>
                 <li class="col-md-4 col-12 font-weight-bold text-center order-1 order-md-3 title"><a href="<?= get_site_url(); ?>" class="navlink">E V A N S</a><button class="arrow d-md-none" aria-label="Toggle menu"></button> </li>
-                <li class="col-md-2 col-12 text-center text-md-left order-4"><a href="<?= get_site_url( null, '/?page_id=30' ); ?>" class="navlink">GALLERY</a></li>
+                <li class="col-md-2 col-12 text-center text-md-left order-4"><a href="<?= get_site_url( null, '/?p=38' ); ?>" class="navlink">GALLERY</a></li>
                 <li class="col-md-2 col-12 text-center text-md-right order-5"><a href="<?= get_site_url( null, '/wp-login.php?action=logout' ); ?>" class="navlink">LOGOUT</a></li>
             </ul>
         </nav>
