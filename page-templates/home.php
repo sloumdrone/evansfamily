@@ -67,6 +67,24 @@
         </div>
     </div>
 </section>
+<?php
+evans_separator('Most recent blog post...', '', 'recent');
+$the_query = new WP_Query( 'posts_per_page=5' );
+while ($the_query -> have_posts()) : $the_query -> the_post();
+?>
+<section class="section-shell">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 text-center">
+                <a href="<?php the_permalink() ?>" class="post-title"><?php the_title(); ?></a>
+            </div>
+            <div class="col-6 text-center" style="line-height: 52.8px;">
+                <?= the_date(); ?>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endwhile; ?>
 <?php evans_separator('Our contact information...', '', 'contact'); ?>
 <section class="section-shell">
     <div class="container">

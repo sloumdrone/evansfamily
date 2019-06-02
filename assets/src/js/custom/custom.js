@@ -11,13 +11,26 @@
  * in your template or in /inc/enqueue.php
  */
 
-var header = (function($){
+var site = (function($){
     var toggleMobileMenu = function() {
         $('ul.menu').toggleClass('expanded');
     };
 
+    var scrolldown = function(e) {
+        e.preventDefault();
+        var scrollTarget = $(this).attr("href");
+        var position = $(scrollTarget).offset().top - 45;
+
+        window.scroll({
+            top: position,
+            left: 0,
+            behavior: 'smooth'
+        });
+    };
+
     var clickHandlers = function() {
         $('button.arrow').on('click', toggleMobileMenu);
+        $('.downlink').on('click', scrolldown);
     };
 
     var init = function() {
@@ -32,5 +45,5 @@ var header = (function($){
 
 
 jQuery(document).ready(function(){
-    header.init();
+    site.init();
 });
