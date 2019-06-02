@@ -115,7 +115,7 @@ while ($the_query -> have_posts()) : $the_query -> the_post();
         </div>
         <div class="row">
             <div class="col-12 text-center mt-5 font-weight-bold">
-                652 Quail Meadow<span class="d-none d-md-inline">,</span><br class="d-md-none"> Irvine, CA 92506
+                837 Estancia<span class="d-none d-md-inline">,</span><br class="d-md-none"> Irvine, CA 92602
             </div>
         </div>
     </div>
