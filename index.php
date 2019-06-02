@@ -38,6 +38,9 @@ $container   = get_theme_mod( 'ff_base_container_type' );
 					<?php while ( have_posts() ) : the_post(); ?>
 
 						<?php
+            if ( has_class('gallery') ) {
+                continue;
+            }
 
 						/*
 						 * Include the Post-Format-specific template for the content.
