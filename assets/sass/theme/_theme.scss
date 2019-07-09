@@ -12,7 +12,7 @@ body {
 }
 
 a, a:hover, a:visited, a:active {
-    color: $evans-blue;
+    color: $evans-blue !important;
     text-decoration: none;
     transition: color 0.4s;
 
