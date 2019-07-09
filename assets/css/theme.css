@@ -9465,7 +9465,7 @@ body {
   padding-top: 90px !important; }
 
 a, a:hover, a:visited, a:active {
-  color: #3E6990;
+  color: #3E6990 !important;
   text-decoration: none;
   -webkit-transition: color 0.4s;
   transition: color 0.4s; }
